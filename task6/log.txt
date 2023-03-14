@@ -1,0 +1,205 @@
+Kitchen
+----------------
+A dank and dirty room buzzing with flies.
+The Roof is north
+The Dining Hall is south
+> south
+
+
+Dining Hall
+----------------
+A large room with ornate golden decorations on each wall.
+The Kitchen is north
+The Ballroom is west
+Dave is here!
+A smelly zombie
+Enemy damage: 20
+The [book] is here - A really good book entitled 'Knitting for dummies'
+> take
+You put the book in your backpack.
+
+
+Dining Hall
+----------------
+A large room with ornate golden decorations on each wall.
+The Kitchen is north
+The Ballroom is west
+Dave is here!
+A smelly zombie
+Enemy damage: 20
+> west
+
+
+Ballroom
+----------------
+A vast room with a shiny wooden floor. Huge candlesticks guard the entrance.
+The Dining Hall is east
+The Shelter is north
+Tabitha is here!
+An enormous spider with countless eyes and furry legs.
+Enemy damage: 30
+Catrina is here!
+A friendly ghost
+The [cheese] is here - A large and smelly block of cheese
+> take
+You put the cheese in your backpack.
+
+
+Ballroom
+----------------
+A vast room with a shiny wooden floor. Huge candlesticks guard the entrance.
+The Dining Hall is east
+The Shelter is north
+Tabitha is here!
+An enormous spider with countless eyes and furry legs.
+Enemy damage: 30
+Catrina is here!
+A friendly ghost
+> talk
+[Tabitha says]: Sssss....I'm so bored...
+
+
+Ballroom
+----------------
+A vast room with a shiny wooden floor. Huge candlesticks guard the entrance.
+The Dining Hall is east
+The Shelter is north
+Tabitha is here!
+An enormous spider with countless eyes and furry legs.
+Enemy damage: 30
+Catrina is here!
+A friendly ghost
+> give
+What do you want to give?
+cheese
+Catrina receives the cheese and thanks you for it.
+Your health increases by 24 points.
+You health is now 124 points.
+
+
+Ballroom
+----------------
+A vast room with a shiny wooden floor. Huge candlesticks guard the entrance.
+The Dining Hall is east
+The Shelter is north
+Tabitha is here!
+An enormous spider with countless eyes and furry legs.
+Enemy damage: 30
+Catrina is here!
+A friendly ghost
+> fight
+What will you fight with?
+book
+Your health is now 94.
+You fend Tabitha off with the book
+Hooray, you won the fight!
+
+
+Ballroom
+----------------
+A vast room with a shiny wooden floor. Huge candlesticks guard the entrance.
+The Dining Hall is east
+The Shelter is north
+Catrina is here!
+A friendly ghost
+> north
+
+
+Shelter
+----------------
+A small room with a bed and a table.
+The Ballroom is south
+The [lighter] is here - A small and useful lighter
+> take
+You put the lighter in your backpack.
+
+
+Shelter
+----------------
+A small room with a bed and a table.
+The Ballroom is south
+> south
+
+
+Ballroom
+----------------
+A vast room with a shiny wooden floor. Huge candlesticks guard the entrance.
+The Dining Hall is east
+The Shelter is north
+Catrina is here!
+A friendly ghost
+> east
+
+
+Dining Hall
+----------------
+A large room with ornate golden decorations on each wall.
+The Kitchen is north
+The Ballroom is west
+Dave is here!
+A smelly zombie
+Enemy damage: 20
+> north
+
+
+Kitchen
+----------------
+A dank and dirty room buzzing with flies.
+The Roof is north
+The Dining Hall is south
+> north
+
+
+Roof
+----------------
+A dark place that is very cold.
+The Kitchen is south
+Boss is here!
+A huge, scary bull, without head.
+Enemy damage: 40
+The [sword] is here - A sharp and shiny sword
+> take
+You put the sword in your backpack.
+
+
+Roof
+----------------
+A dark place that is very cold.
+The Kitchen is south
+Boss is here!
+A huge, scary bull, without head.
+Enemy damage: 40
+> talk
+[Boss says]: I'm going to eat you!
+
+
+Roof
+----------------
+A dark place that is very cold.
+The Kitchen is south
+Boss is here!
+A huge, scary bull, without head.
+Enemy damage: 40
+> fight
+What will you fight with?
+lighter
+Your health is now 54.
+You hit the enemy, but it is still alive!
+Boss says: You thing I'm weak? I have 1 lives!
+Hooray, you won the fight!
+
+
+Roof
+----------------
+A dark place that is very cold.
+The Kitchen is south
+Boss is here!
+A huge, scary bull, without head.
+Enemy damage: 40
+> fight
+What will you fight with?
+sword
+Your health is now 14.
+You fend Boss off with the sword
+Hooray, you won the fight!
+Congratulations, you have vanquished the enemy horde!
