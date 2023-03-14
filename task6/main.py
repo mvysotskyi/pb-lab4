@@ -54,14 +54,11 @@ dining_hall.set_item(book)
 
 sword = game.Item("sword", 50)
 sword.set_description("A sharp and shiny sword")
+roof.set_item(sword)
 
 lighter = game.Item("lighter", 50)
 lighter.set_description("A small and useful lighter")
-
 shelter.set_item(lighter)
-
-roof.set_item(sword)
-roof.set_character(boss)
 
 current_room = kitchen
 backpack = {}
@@ -107,11 +104,11 @@ while dead == False:
                 if inhabitant.fight(fight_with) == True and health > 0:
                     # What happens if you win?
                     print("Hooray, you won the fight!")
-                    if current_room.character.lives == 0:
-                        current_room.character = None
                     if inhabitant.get_defeated() == 2:
                         print("Congratulations, you have vanquished the enemy horde!")
                         dead = True
+                    if inhabitant.lives == 0:
+                        current_room.set_character(None)
                 else:
                     # What happens if you lose?
                     print("Oh dear, you lost the fight.")
@@ -120,10 +117,10 @@ while dead == False:
             else:
                 print("You don't have a " + fight_with)
         else:
-            print("There is no one here to fight with")
+            print("There is no one here to fight with.")
     elif command == "take":
         if item is not None:
-            print("You put the " + item.get_name() + " in your backpack")
+            print("You put the " + item.get_name() + " in your backpack.")
             backpack[item.get_name()] = item
             current_room.set_item(None)
         else:
@@ -133,9 +130,13 @@ while dead == False:
             print("What do you want to give?")
             gift = input()
             if gift in backpack:
-                health += current_room.get_friend().give(backpack[gift])
+                delta_health = current_room.get_friend().give(backpack[gift])
+                print(f"Your health increases by {delta_health} points.")
+                health += delta_health
+
+                print(f"You health is now {health} points.")
                 del backpack[gift]
             else:
-                print("You don't have a " + gift)
+                print(f"You don't have a {gift} to give.")
     else:
-        print("I don't know how to " + command)
+        print(f"I don't know how to [{command}]")

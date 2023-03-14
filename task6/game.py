@@ -228,5 +228,4 @@ class Friend(Character):
         """
         print(f"{self.name} receives the {gift.get_name()} and thanks you for it.")
         health =  int(gift.value * 0.8)
-        print("Your health increases by " + str(health) + " points.")
         return health
