@@ -111,9 +111,11 @@ while dead == False:
                         current_room.set_character(None)
                 else:
                     # What happens if you lose?
-                    print("Oh dear, you lost the fight.")
-                    print("That's the end of the game")
-                    dead = True
+                    if health <= 0:
+                        print("You have died. Game over.")
+                        dead = True
+                    else:
+                        print("Oh dear, you lost the fight.")
             else:
                 print("You don't have a " + fight_with)
         else:
