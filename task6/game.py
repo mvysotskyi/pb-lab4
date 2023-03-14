@@ -219,9 +219,6 @@ class Friend(Character):
     """
     Friend class.
     """
-    def __init__(self, name: str, description: str):
-        super().__init__(name, description)
-
     def give(self, gift: Item) -> None:
         """
         Give a gift to the friend.
