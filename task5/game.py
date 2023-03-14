@@ -130,6 +130,7 @@ class Enemy(Character):
     """
     Enemy class.
     """
+    defeated: int = 0
     def __init__(self, name: str, description: str):
         super().__init__(name, description)
 
@@ -146,7 +147,7 @@ class Enemy(Character):
         """
         Get the number of times the enemy has been defeated.
         """
-        return self.defeated
+        return Enemy.defeated
 
     def fight(self, combat_item: str) -> bool:
         """
@@ -154,7 +155,7 @@ class Enemy(Character):
         """
         if combat_item == self.weakness:
             print(f"You fend {self.name} off with the {combat_item}")
-            self.defeated += 1
+            Enemy.defeated += 1
             return True
         else:
             print(f"{self.name} crushes you, puny adventurer!")
